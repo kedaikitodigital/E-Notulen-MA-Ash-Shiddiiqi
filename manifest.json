@@ -1,0 +1,14 @@
+{
+  "name": "Notulen MA Ash-Shiddiiqi",
+  "short_name": "Notulen",
+  "description": "Aplikasi notulen rapat dan pertemuan MA Ash-Shiddiiqi",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f1f5f4",
+  "theme_color": "#0f766e",
+  "lang": "id",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

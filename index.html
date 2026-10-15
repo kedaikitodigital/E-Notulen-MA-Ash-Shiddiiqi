@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Notulen MA Ash-Shiddiiqi</title>
+<meta name="theme-color" content="#0f766e">
+<meta name="description" content="Aplikasi notulen rapat dan pertemuan MA Ash-Shiddiiqi">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar no-print">
+  <a href="#/" class="brand">
+    <img id="brandLogo" src="icon.svg" alt="">
+    <span><strong>Notulen</strong><small id="brandName">MA Ash-Shiddiiqi</small></span>
+  </a>
+  <nav>
+    <a href="#/" data-nav="">Beranda</a>
+    <a href="#/pengaturan" data-nav="pengaturan">Pengaturan</a>
+  </nav>
+</header>
+
+<main id="app"><noscript>Aplikasi ini membutuhkan JavaScript.</noscript></main>
+
+<dialog id="waDialog" class="no-print">
+  <form method="dialog" class="dlg">
+    <div class="dlg-head"><h3>Kirim ke WhatsApp</h3><button class="x" value="close" aria-label="Tutup">✕</button></div>
+    <label>Nomor tujuan (opsional)
+      <input id="waNum" inputmode="tel" placeholder="08xxxxxxxxxx — kosongkan untuk memilih kontak/grup di WhatsApp">
+    </label>
+    <label>Pesan (bisa diedit sebelum dikirim)
+      <textarea id="waText" rows="12"></textarea>
+    </label>
+    <p class="hint">Tombol “Buka WhatsApp” membuka WhatsApp dengan pesan sudah terisi. Anda tinggal memilih grup/kontak lalu menekan kirim.</p>
+    <div class="btnrow">
+      <button type="button" class="btn wa" id="waSend">Buka WhatsApp</button>
+      <button type="button" class="btn" id="waShare">Bagikan…</button>
+      <button type="button" class="btn ghost" id="waCopy">Salin</button>
+    </div>
+  </form>
+</dialog>
+
+<div id="toast" class="no-print" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>
